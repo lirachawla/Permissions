@@ -47,18 +47,12 @@ def query_db(query,args=(),one=False):
 
 # Importing Blueprints
 from app.views.main import main
-from app.views.admin import admin
-from app.views.hostel import hostel
-from app.views.cms import cms
 from app.views.apiController import apiController
 from app.views.parent import parent
 from app.views.guard import guard
 
 # Registering Blueprints
 app.register_blueprint(main)
-app.register_blueprint(admin)
-app.register_blueprint(hostel)
-app.register_blueprint(cms)
 app.register_blueprint(apiController)
 app.register_blueprint(parent)
 app.register_blueprint(guard)
